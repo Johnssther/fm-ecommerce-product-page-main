@@ -1,0 +1,76 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    border-bottom: 1px solid #E8E7EB;
+}
+
+.nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+    &__menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        list-style: none;
+        height: 100%;
+        
+        &_item {
+            height: 100%;
+            border-bottom: 4px solid #fff;
+
+            &_link {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                text-decoration: none;
+                color: #7A7C81;
+                height: 100%;
+            }
+            &--active {
+                color: #2E2E30;
+                border-bottom: 4px solid #F07C3A;
+            }
+            &:hover {
+                color: #2E2E30;
+                border-bottom: 4px solid #F07C3A;
+
+            }
+        }
+    }
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__shoppingCart {
+        cursor: pointer;
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            border-radius: 50%;
+            width: 45%;
+            border: 2px solid #F07C3A;
+            cursor: pointer;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+}
+.container {
+    width: 77%;
+    margin: 0 auto;
+}
