@@ -4,6 +4,7 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
     &__images {
+        width: 90%;
         &_main {
             width: 100%;
             img {
@@ -41,8 +42,8 @@
             font-size: 50px;
         }
         &_description {
-            width: 70%;
             color: #A0A1A6;
+            line-height: 1.8;
         }
         &_price {
             p {
@@ -64,4 +65,41 @@
             }
         }
     }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 500px) {
+    .product {
+        margin-top: 0rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0;
+        &__images {
+            width: 100%;
+            &_main {
+                width: 100%;
+                img {
+                    border-radius: 0rem;
+                }
+            }
+            &_secondary {
+                visibility: hidden;
+                height: 0;
+            }
+        }
+        &__information {
+            margin-top: 0;
+            padding: 2rem;
+        }
+    }
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.contenedor {
+    width: 50%;
+    height: 30vh;
+    margin: 0 auto;
+    margin-bottom: 50rem;
 }

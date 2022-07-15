@@ -21,7 +21,7 @@
         width: 90%;
         list-style: none;
         height: 100%;
-        
+
         &_item {
             height: 100%;
             border-bottom: 4px solid #fff;
@@ -34,10 +34,12 @@
                 color: #7A7C81;
                 height: 100%;
             }
+
             &--active {
                 color: #2E2E30;
                 border-bottom: 4px solid #F07C3A;
             }
+
             &:hover {
                 color: #2E2E30;
                 border-bottom: 4px solid #F07C3A;
@@ -51,13 +53,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     &__shoppingCart {
         cursor: pointer;
     }
+
     &__img {
         display: flex;
         justify-content: center;
         align-items: center;
+
         img {
             border-radius: 50%;
             width: 45%;
@@ -67,10 +72,27 @@
     }
 }
 
+@media only screen and (min-width: 350px) and (max-width: 960px) {
+    .nav {
+        &__brand {
+            width: 100%;
+        }
+        &__menu {
+            visibility:hidden;
+            width: 0;
+        }
+    }
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
 img {
     max-width: 100%;
 }
+
 .container {
-    width: 77%;
+    width: 70%;
     margin: 0 auto;
 }
